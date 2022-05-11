@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+
+.category0 {
+  @apply bg-green-200 dark:bg-green-800 w-full h-full flex justify-evenly items-center  cursor-pointer transition duration-200;
+}
+.category0:hover {
+  @apply opacity-60;
+}
+.category1 {
+  @apply bg-green-400 dark:bg-green-600 w-full h-full flex justify-evenly items-center  cursor-pointer transition duration-200;
+}
+
+.category1:hover {
+  @apply opacity-70;
+}
+
+.category-icons0 {
+  @apply w-14 h-14 text-center text-green-400 dark:text-green-100 sm:w-20 sm:h-20;
+}
+.category-icons1 {
+  @apply w-14 h-14 text-center text-green-200 sm:w-20 sm:h-20;
+}
+.btn {
+  @apply w-full my-5 py-2 bg-teal-500 dark:bg-green-700 shadow-lg shadow-teal-500/10 hover:shadow-teal-500/40 text-white font-semibold rounded-lg;
+}
+
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "parasto";
+    src: url("/fonts/Parastoo-Bold.woff") format("woff"),
+      url("/fonts/Parastoo-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "samim";
+    src: url("/fonts/Samim-WOL.woff") format("woff"),
+      url("/fonts/Samim-WOL.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "vazir";
+    src: url("/fonts/Vazir-Thin.woff") format("woff"),
+      url("/fonts/Vazir-Thin.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Tanha";
+    src: url("/fonts/Tanha.woff") format("woff"),
+      url("/public/fonts/Tanha.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "shabnam";
+    src: url("/fonts/Shabnam-Light.woff") format("woff"),
+      url("/fonts/Shabnam-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "twomedium";
+    src: url("/fonts/pixelboy-TwoMedium.woff") format("woff");
+  }
+}

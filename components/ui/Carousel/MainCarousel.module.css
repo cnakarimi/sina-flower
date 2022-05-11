@@ -1,0 +1,11 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+}
+.embla__slide {
+  flex: 0 0 200px;
+}
