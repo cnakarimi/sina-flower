@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import PersianPriceLarge from "../../../helpers/persianPriceLarge";
+import PersianPriceLarge from "../../../helpers/PersianPriceLarge";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../store/slices/cartSlice";
