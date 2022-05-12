@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import PersianPriceLarge from "../../../helpers/PersianPriceLarge";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../store/slices/cartSlice";
 import Cutting from "../../../public/icons/Cutting";
@@ -9,12 +10,13 @@ import Watering from "../../../public/icons/Watering";
 
 function DesktopDetail(props) {
   const dispatch = useDispatch();
+  const router = useRouter();
 
   function commentsViewer() {
-    router.push(`/categories/comments/${product.id}`);
+    router.push(`/categories/comments/${props.id}`);
   }
   function postCommentHandler() {
-    router.push(`/categories/comments/newComment/${product.id}`);
+    router.push(`/categories/comments/newComment/${props.id}`);
   }
   function addToCartHandler(product) {
     dispatch(addToCart(product));

@@ -13,10 +13,10 @@ function MobileDetail(props) {
   const router = useRouter();
 
   function commentsViewer() {
-    router.push(`/categories/comments/${product.id}`);
+    router.push(`/categories/comments/${props.id}`);
   }
   function postCommentHandler() {
-    router.push(`/categories/comments/newComment/${product.id}`);
+    router.push(`/categories/comments/newComment/${props.id}`);
   }
   function addToCartHandler(product) {
     dispatch(addToCart(product));
