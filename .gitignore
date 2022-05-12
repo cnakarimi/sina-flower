@@ -18,9 +18,7 @@
 # misc
 .DS_Store
 *.pem
-*.png
-*.jpg
-*.gif
+
 
 # debug
 npm-debug.log*
