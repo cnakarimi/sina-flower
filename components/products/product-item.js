@@ -44,22 +44,22 @@ function ProductItem(props) {
       <div className="h-8 w-20 sm:h-7 sm:w-28 bg-white dark:bg-emerald-900 absolute text-center justify-around left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:top-1/2 top-16 rounded-xl hidden group-hover:flex text-slate-600 dark:text-green-200">
         <Link href={exploreLink}>
           <button>
-            <Search className="hover:text-green-400 h-5 sm:h-7" />
+            <Search className="hover:text-green-400 h-5 w-5 sm:w-7 sm:h-7" />
           </button>
         </Link>
         {isFavorite && (
           <button onClick={() => removeFromFavoritesHandler(props.product)}>
-            <FilledHeart className=" text-red-400 cursor-pointer h-5 sm:h-7" />
+            <FilledHeart className=" text-red-400 cursor-pointer h-5 w-5 sm:w-7 sm:h-7" />
           </button>
         )}
 
         {!isFavorite && (
           <button onClick={() => addToFavoritesHandler(props.product)}>
-            <Heart className=" hover:text-green-400 cursor-pointer h-5 sm:h-7" />
+            <Heart className=" hover:text-green-400 cursor-pointer h-5 w-5 sm:w-7 sm:h-7" />
           </button>
         )}
         <button onClick={() => addToCartHandler(props.product)}>
-          <AddToCart className=" hover:text-green-400 cursor-pointer h-5 sm:h-7" />
+          <AddToCart className=" hover:text-green-400 cursor-pointer h-5 w-5 sm:w-7 sm:h-7" />
         </button>
       </div>
       <div>

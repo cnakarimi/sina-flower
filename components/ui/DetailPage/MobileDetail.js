@@ -29,7 +29,7 @@ function MobileDetail(props) {
       </div>
       <div className=" px-8  py-1 flex justify-between md:hidden">
         <div className="flex flex-col w-full">
-          <h1 className="text-xl sm:2xl">{props.name}</h1>
+          <h1 className="text-xl sm:2xl dark:text-lime-200">{props.name}</h1>
           <div className="pt-2 dark:text-slate-200">اطلاعات</div>
         </div>
         <div className="w-full flex justify-end text-xl xs:2xl pt-4 md:hidden">

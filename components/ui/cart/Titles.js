@@ -12,7 +12,9 @@ function Titles() {
   return (
     <Fragment>
       <div className="flex justify-between">
-        <div className="py-6 text-xl md:text-2xl">سبد خرید</div>
+        <div className="py-6 text-xl md:text-2xl dark:text-slate-200">
+          سبد خرید
+        </div>
         <button
           className="btn w-16 text-xs sm:w-1/12"
           onClick={resetCartHandler}

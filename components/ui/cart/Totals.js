@@ -15,10 +15,10 @@ function Totals() {
 
   return (
     <div className=" w-1/3 h-full px-7">
-      <div className=" py-32 text-md md:text-xl">
+      <div className=" py-32 text-md md:text-xl dark:text-slate-200">
         خلاصه سبد
         <div className="flex justify-between md:justify-start mt-6 text-xs md:text-sm ">
-          <p>قیمت کل</p>
+          <p className="dark:text-slate-200">قیمت کل</p>
           <p className="md:pr-7">
             <PersianPriceSmall number={cart.cartTotalAmount} />
             <PersianPrice number={cart.cartTotalAmount} />

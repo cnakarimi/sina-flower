@@ -8,7 +8,7 @@ function Us(props) {
 
   return (
     <Fragment>
-      <h3 className="py-12 px-5 text-2xl dark:border-x-white">تیم جذاب ما</h3>
+      <h3 className="py-12 px-5 text-2xl dark:text-slate-200">تیم جذاب ما</h3>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  place-items-center ">
         {personnel.map((member) => (
