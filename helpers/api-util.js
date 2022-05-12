@@ -1,25 +1,11 @@
+import { PRODUCTS, PERSONELS } from "../db";
+
 export async function getAllProducts() {
-  const response = await fetch("http://localhost:8000/products");
-  const data = await response.json();
-
-  const products = [];
-
-  for (const key in data) {
-    products.push({ id: key, ...data[key] });
-  }
-  return products;
+  return PRODUCTS;
 }
 
 export async function getPersonnel() {
-  const response = await fetch("http://localhost:8000/personnel");
-  const data = await response.json();
-
-  const personnel = [];
-
-  for (const key in data) {
-    personnel.push({ id: key, ...data[key] });
-  }
-  return personnel;
+  return PERSONELS;
 }
 
 export async function suggestedItems() {

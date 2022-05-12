@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
+    "@supabase/supabase-js": "^1.35.3",
     "bcryptjs": "^2.4.3",
     "embla-carousel-autoplay": "^6.2.0",
     "embla-carousel-react": "^6.2.0",
