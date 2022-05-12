@@ -27,7 +27,7 @@ function Header(props) {
       <div className="bg-stone-100 border border-stone-300 flex justify-between  md:hidden z-50 ">
         <div className="flex m-5 justify-around font-twomedium text-lg font-bold sm:text-3xl ">
           <Link href="/">
-            <a className="px-2  ">
+            <a className="px-2 dark:text-slate-900 ">
               گل
               <span className="text-green-600 "> سینا</span>
             </a>
@@ -37,7 +37,7 @@ function Header(props) {
           onClick={toggleMenuHandler}
           className="focus:bg-stone-200 p-2  "
         >
-          <MenuToggler />
+          <MenuToggler className="dark:text-green-900" />
         </button>
       </div>
       {/* sidebar */}
@@ -55,7 +55,7 @@ function Header(props) {
           <input
             type="search"
             placeholder="جستجو"
-            className="focus:outline-none focus:shadow-md dark:text-white"
+            className="focus:outline-none focus:shadow-md dark:text-white dark:bg-slate-900"
           ></input>
         </nav>
       </div>

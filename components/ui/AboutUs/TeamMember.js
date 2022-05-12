@@ -29,7 +29,7 @@ function TeamMember(props) {
           </div>
         </div>
       </li>
-      <div className="pt-5 text-sm sm:text-base">{name}</div>
+      <div className="pt-5 text-sm sm:text-base dark:ring-white">{name}</div>
       <p className="pt-1 sm:pt-2 text-sm sm:text-base text-green-700 dark:text-green-200">
         {job}
       </p>

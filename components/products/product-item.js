@@ -41,7 +41,7 @@ function ProductItem(props) {
       mx-4 pt-6 transform transition duration-200 group hover:scale-110  "
     >
       <Image src={"/" + image} alt={name} width={150} height={220} />
-      <div className="h-5 w-20 sm:h-7 sm:w-28 bg-white dark:bg-emerald-900 absolute text-center justify-around left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:top-1/2 top-16 rounded-xl hidden group-hover:flex text-slate-600 dark:text-green-200">
+      <div className="h-8 w-20 sm:h-7 sm:w-28 bg-white dark:bg-emerald-900 absolute text-center justify-around left-1/2 transform -translate-x-1/2 -translate-y-1/2 xs:top-1/2 top-16 rounded-xl hidden group-hover:flex text-slate-600 dark:text-green-200">
         <Link href={exploreLink}>
           <button>
             <Search className="hover:text-green-400 h-5 sm:h-7" />
