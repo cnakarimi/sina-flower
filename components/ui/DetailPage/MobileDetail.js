@@ -71,7 +71,7 @@ function MobileDetail(props) {
           {props.cutting}
         </p>
         <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base">
-          {props.sparying}
+          {props.spraying}
         </p>
         <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base">
           {props.watering}

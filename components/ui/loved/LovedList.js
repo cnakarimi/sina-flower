@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import PersianPrice from "../../../helpers/persianPrice";
+import PersianPriceSmall from "../../../helpers/PersianPriceSmall";
 import Trash from "../../../public/icons/Trash";
 import { removeFromFavorites } from "../../../store/slices/favoritesSlice";
 
@@ -11,13 +12,11 @@ function LovedList(props) {
   }
 
   return (
-    <li className="flex justify-around  items-center text-center text-xs  mt-2 border-b-2 border-slate-200">
+    <li className="flex text-center text-xs  mt-2 border-b-2 border-slate-200">
       <p className="w-1/3 xs:text-base xxs:text-sm text-xs">{props.name}</p>
-      <p className="w-1/3">
-        <PersianPrice
-          number={props.price}
-          className={"dark:text-white"}
-        ></PersianPrice>
+      <p className="w-1/3 flex justify-center">
+        <PersianPrice number={props.price} />
+        <PersianPriceSmall number={props.price} />
       </p>
       <button
         className="w-1/3  flex justify-center"

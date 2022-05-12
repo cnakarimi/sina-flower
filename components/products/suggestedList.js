@@ -5,12 +5,13 @@ import AddToCart from "../../public/icons/AddToCart";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../store/slices/cartSlice";
-import PersianPrice from "../../helpers/persianPrice";
+import PersianPriceSmall from "../../helpers/PersianPriceSmall";
 import {
   addToFavorites,
   removeFromFavorites,
 } from "../../store/slices/favoritesSlice";
 import FilledHeart from "../../public/icons/FilledHeart";
+import PersianPrice from "../../helpers/persianPrice";
 
 function SuggestedList(props) {
   const { product, image, name, price } = props;
@@ -40,9 +41,9 @@ function SuggestedList(props) {
 
       <div className="h-7 w-28 bg-white dark:bg-emerald-900 absolute text-center justify-around left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/3 rounded-xl hidden group-hover:flex text-slate-600 dark:text-green-200">
         <Link href={exploreLink}>
-          <a>
-            <Search className="hover:text-green-400 h-5 w-5 md:h-7 md:w-7" />
-          </a>
+          <button>
+            <Search className="cursor-pointer hover:text-green-400 h-5 w-5 md:h-7 md:w-7" />
+          </button>
         </Link>
         {!isFavorite && (
           <button onClick={() => addToFavoritesHandler(product)}>
@@ -60,7 +61,8 @@ function SuggestedList(props) {
         </button>
       </div>
       <div className="pr-5">
-        <h2 className="xs:text-base text-xs dark:text-green-200">{name}</h2>
+        <h2 className="xs:text-base text-tiny dark:text-green-200">{name}</h2>
+        <PersianPriceSmall number={price} />
         <PersianPrice number={price} />
       </div>
     </li>

@@ -4,11 +4,12 @@ import {
   decreaseCart,
   removeFromCart,
 } from "../../../store/slices/cartSlice";
-import PersianPrice from "../../../helpers/persianPrice";
 import PersianNumber from "../../../helpers/persianNumbers";
 import Trash from "../../../public/icons/Trash";
 import RemoveFromCart from "../../../public/icons/RemoveFromCart";
 import IncreaseCart from "../../../public/icons/IncreaseCart";
+import PersianPrice from "../../../helpers/persianPrice";
+import PersianPriceSmall from "../../../helpers/PersianPriceSmall";
 
 function Choose() {
   const dispatch = useDispatch();
@@ -34,12 +35,16 @@ function Choose() {
         >
           <p className="w-1/12">{cartItem.name}</p>
           <p className="w-1/12">
+            <PersianPriceSmall number={cartItem.price} />
             <PersianPrice number={cartItem.price} />
           </p>
           <p className="w-1/12">
             <PersianNumber number={cartItem.cartQuantity} />
           </p>
           <p className="w-1/12 hidden xs:flex">
+            <PersianPriceSmall
+              number={cartItem.price * cartItem.cartQuantity}
+            />
             <PersianPrice number={cartItem.price * cartItem.cartQuantity} />
           </p>
 

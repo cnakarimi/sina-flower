@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class PersianPrice extends Component {
+class PersianPriceSmall extends Component {
   render() {
     let en_number = this.props.number.toString();
     let persianDigits = "۰۱۲۳۴۵۶۷۸۹";
@@ -9,12 +9,8 @@ class PersianPrice extends Component {
       return persianMap[parseInt(m)];
     });
 
-    return (
-      <span className="xs:text-base text-xs hidden sm:flex">
-        {persian_number} تومان
-      </span>
-    );
+    return <span className="text-tiny sm:hidden">{persian_number} تومان</span>;
   }
 }
 
-export default PersianPrice;
+export default PersianPriceSmall;

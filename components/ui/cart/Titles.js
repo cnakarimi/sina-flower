@@ -9,7 +9,10 @@ function Titles() {
     <Fragment>
       <div className="flex justify-between">
         <div className="py-6 text-xl md:text-2xl">سبد خرید</div>
-        <button className="btn w-1/12" onClick={resetCartHandler}>
+        <button
+          className="btn w-16 text-xs sm:w-1/12"
+          onClick={resetCartHandler}
+        >
           حذف همه
         </button>
       </div>

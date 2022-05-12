@@ -1,7 +1,8 @@
-import PersianPrice from "../../../helpers/persianPrice";
 import { useSelector, useDispatch } from "react-redux";
 import { getTotal } from "../../../store/slices/cartSlice";
 import { useEffect } from "react";
+import PersianPriceSmall from "../../../helpers/PersianPriceSmall";
+import PersianPrice from "../../../helpers/persianPrice";
 
 function Totals() {
   const dispatch = useDispatch();
@@ -19,7 +20,8 @@ function Totals() {
         <div className="flex justify-between md:justify-start mt-6 text-xs md:text-sm ">
           <p>قیمت کل</p>
           <p className="md:pr-7">
-            <PersianPrice number={cart.cartTotalAmount}></PersianPrice>
+            <PersianPriceSmall number={cart.cartTotalAmount} />
+            <PersianPrice number={cart.cartTotalAmount} />
           </p>
         </div>
         <div className="flex justify-between md:justify-start mt-6 text-xs md:text-sm "></div>
