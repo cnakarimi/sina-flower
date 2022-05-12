@@ -12,7 +12,7 @@ export default function Home(props) {
         <meta name="description" content="" />
       </Head>
       <MainCarousel />
-      <h5 className=" mt-12 mx-6">محصولات پیشنهادی</h5>
+      <h5 className=" mt-12 mx-6 dark:text-lime-200">محصولات پیشنهادی</h5>
       <SuggestedProducts items={props.suggested} />
     </Fragment>
   );
