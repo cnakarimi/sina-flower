@@ -10,7 +10,7 @@ class PersianPrice extends Component {
     });
 
     return (
-      <span className="xs:text-base text-xs hidden sm:flex">
+      <span className="xs:text-base text-xs hidden sm:flex dark:text-white">
         {persian_number} تومان
       </span>
     );

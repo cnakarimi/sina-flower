@@ -13,7 +13,9 @@ function LovedList(props) {
 
   return (
     <li className="flex text-center text-xs  mt-2 border-b-2 border-slate-200">
-      <p className="w-1/3 xs:text-base xxs:text-sm text-xs">{props.name}</p>
+      <p className="w-1/3 xs:text-base xxs:text-sm text-xs dark:text-lime-200">
+        {props.name}
+      </p>
       <p className="w-1/3 flex justify-center">
         <PersianPrice number={props.price} />
         <PersianPriceSmall number={props.price} />
@@ -22,7 +24,7 @@ function LovedList(props) {
         className="w-1/3  flex justify-center"
         onClick={() => removeFromFavoritesHandler(props.product)}
       >
-        <Trash className="transition duration-200 hover:text-red-700 cursor-pointer hover:scale-125 " />
+        <Trash className="transition duration-200 hover:text-red-700 cursor-pointer hover:scale-125 dark:text-slate-200" />
       </button>
     </li>
   );

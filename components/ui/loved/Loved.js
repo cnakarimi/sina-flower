@@ -8,7 +8,9 @@ function Loved() {
   return (
     <div className="flex w-screen h-screen">
       <div className=" w-full h-full  px-7 border-slate-200">
-        <div className="py-6 text-xl md:text-2xl">محصولات مورد علاقه شما</div>
+        <div className="py-6 text-xl md:text-2xl dark:text-green-200">
+          محصولات مورد علاقه شما
+        </div>
         <LoveTitles />
         {/* product */}
         <ul className="mt-4 md:pl-40">

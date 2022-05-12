@@ -1,6 +1,10 @@
 import { Fragment } from "react";
+import { useDispatch } from "react-redux";
+import { restartItems } from "../../../store/slices/cartSlice";
 
 function Titles() {
+  const dispatch = useDispatch();
+
   const resetCartHandler = () => {
     dispatch(restartItems());
   };

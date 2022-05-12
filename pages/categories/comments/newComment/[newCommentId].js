@@ -52,10 +52,12 @@ function YourComment() {
           throw new Error(data.message || "خطایی رخ داد");
         });
       })
-      .then((data) =>
-        toast.success("نظر شما ذخیره شد", {
-          position: "bottom-right",
-        })
+      .then(
+        (data) =>
+          toast.success("نظر شما ذخیره شد", {
+            position: "bottom-right",
+          }),
+        router.back()
       )
       .catch((error) => {
         toast.error(error.message || "ارسال اطلاعات ناموفق", {
@@ -71,10 +73,10 @@ function YourComment() {
       </Head>
       <form
         id="contact-me"
-        className="w-full mx-auto  max-w-3xl bg-white shadow p-8 text-gray-700 "
+        className="w-full mx-auto  max-w-3xl bg-white shadow p-8 text-gray-700 dark:bg-slate-500"
         onSubmit={sendCommentHandler}
       >
-        <h2 className="w-full my-2 text-3xl font-bold leading-tight ">
+        <h2 className="w-full my-2 text-3xl font-bold leading-tight dark:text-slate-200">
           دیدگاه شما راجب این محصول
         </h2>
         <div className="flex flex-wrap mb-6">

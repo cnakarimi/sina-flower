@@ -30,7 +30,7 @@ function DesktopDetail(props) {
       <div className="hidden md:flex md:w-4/6  ">
         <div className=" mt-20 px-8 ">
           <div className="flex justify-between items-center">
-            <h1 className="text-4xl">{props.name}</h1>
+            <h1 className="text-4xl dark:text-lime-200">{props.name}</h1>
           </div>
           <div className="flex">
             <div className="flex items-center w-1/2">
@@ -45,13 +45,13 @@ function DesktopDetail(props) {
               </button>
             </div>
           </div>
-          <div className=" text-2xl pt-8">info</div>
+          <div className=" text-2xl pt-8 dark:text-slate-200">اطلاعات</div>
           <div className="text-gray-500 pt-4 break-words text-xl">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است
           </div>
           <div className=" w-full py-4   hidden md:block">
-            <h3 className=" text-xl">اطلاعات</h3>
+            <h3 className=" text-xl dark:text-slate-200">مشخصات</h3>
           </div>
           <div className="py-5  w-1/2 md:flex  lg:justify-evenly hidden ">
             <div className=" w-16 h-16 border-2 border-lime-200 rounded flex justify-center items-center ">

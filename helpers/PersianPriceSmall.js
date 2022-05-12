@@ -9,7 +9,11 @@ class PersianPriceSmall extends Component {
       return persianMap[parseInt(m)];
     });
 
-    return <span className="text-tiny sm:hidden">{persian_number} تومان</span>;
+    return (
+      <span className="text-tiny sm:hidden dark:text-white">
+        {persian_number} تومان
+      </span>
+    );
   }
 }
 

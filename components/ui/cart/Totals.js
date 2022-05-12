@@ -27,12 +27,12 @@ function Totals() {
         <div className="flex justify-between md:justify-start mt-6 text-xs md:text-sm "></div>
         <div className="flex justify-start  mt-6 text-xs md:text-sm ">
           <input
-            className="rounded w-24 h-5 sm:w-28 md:w-30 placeholder:pr-2 "
+            className="rounded w-24 h-5 sm:w-28 md:w-30 placeholder:pr-2 dark:bg-slate-700 "
             placeholder="کد تخفیف   "
           />
         </div>
         <div className="flex justify-start mt-4 text-xs ">
-          <button className="rounded w-12 h-6 md:w-16 md:h-7 bg-slate-100 hover:opacity-75">
+          <button className="rounded w-12 h-6 md:w-16 md:h-7 bg-slate-100 hover:opacity-75 dark:bg-green-600">
             پرداخت
           </button>
         </div>

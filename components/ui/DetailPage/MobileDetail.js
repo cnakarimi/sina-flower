@@ -30,7 +30,7 @@ function MobileDetail(props) {
       <div className=" px-8  py-1 flex justify-between md:hidden">
         <div className="flex flex-col w-full">
           <h1 className="text-xl sm:2xl">{props.name}</h1>
-          <div className="pt-2">اطلاعات</div>
+          <div className="pt-2 dark:text-slate-200">اطلاعات</div>
         </div>
         <div className="w-full flex justify-end text-xl xs:2xl pt-4 md:hidden">
           <PersianPrice number={props.price} />
@@ -43,7 +43,7 @@ function MobileDetail(props) {
         </span>
       </div>
       <div className=" w-full  px-8 md:hidden">
-        <h3 className=" text-lg xs:2xl pt-4">مشخصات</h3>
+        <h3 className=" text-lg xs:2xl pt-4 dark:text-slate-200">مشخصات</h3>
       </div>
       <div className="flex md:hidden">
         <div className="pt-5 w-1/2 flex justify-evenly px-8">
@@ -67,13 +67,13 @@ function MobileDetail(props) {
         </div>
       </div>
       <div className="w-1/2 h-8 flex justify-evenly md:hidden px-8">
-        <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base">
+        <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base dark:text-lime-200">
           {props.cutting}
         </p>
-        <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base">
+        <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base dark:text-lime-200">
           {props.spraying}
         </p>
-        <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base">
+        <p className="w-8 h-8 xs:w-12 xs:h-12 sm:w-16 sm:h-16 text-center text-tiny xs:text-xs sm:text-base dark:text-lime-200">
           {props.watering}
         </p>
       </div>

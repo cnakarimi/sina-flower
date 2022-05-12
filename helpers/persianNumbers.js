@@ -9,7 +9,7 @@ class PersianNumber extends Component {
       return persianMap[parseInt(m)];
     });
 
-    return <span>{persian_number}</span>;
+    return <span className="dark:text-green-200">{persian_number}</span>;
   }
 }
 

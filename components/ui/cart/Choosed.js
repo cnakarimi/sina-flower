@@ -33,7 +33,7 @@ function Choose() {
           className="flex justify-around items-center text-center text-xs md:text-sm mt-2 border-b-2 border-slate-200 "
           key={cartItem.id}
         >
-          <p className="w-1/12">{cartItem.name}</p>
+          <p className="w-1/12 dark:text-lime-200">{cartItem.name}</p>
           <p className="w-1/12">
             <PersianPriceSmall number={cartItem.price} />
             <PersianPrice number={cartItem.price} />
@@ -53,19 +53,19 @@ function Choose() {
               className="w-full flex justify-center"
               onClick={() => removeCartHandler(cartItem)}
             >
-              <Trash className="transition duration-200 hover:text-red-700 cursor-pointer transform hover:scale-125  " />
+              <Trash className="transition duration-200 hover:text-red-700 cursor-pointer transform hover:scale-125 dark:text-slate-200 " />
             </button>
             <button
               className="w-full flex justify-center"
               onClick={() => decreaseCartHandler(cartItem)}
             >
-              <RemoveFromCart className="transition duration-200 hover:text-red-700 cursor-pointer transform hover:scale-125" />
+              <RemoveFromCart className="transition duration-200 hover:text-red-700 cursor-pointer transform hover:scale-125 dark:text-slate-200" />
             </button>
             <button
               className="w-full flex justify-center"
               onClick={() => increaseCartHandler(cartItem)}
             >
-              <IncreaseCart className="transition duration-200 hover:text-green-700 cursor-pointer transform hover:scale-125 " />
+              <IncreaseCart className="transition duration-200 hover:text-green-700 cursor-pointer transform hover:scale-125 dark:text-slate-200" />
             </button>
           </div>
         </li>
