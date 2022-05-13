@@ -21,6 +21,10 @@ function Header(props) {
     setToggle(!toggle);
   };
 
+  const closeToggleHandler = () => {
+    setToggle(false);
+  };
+
   return (
     <div className="relative min-h-screen md:flex overflow-hidden font-samim ">
       {/* mobile menu */}
@@ -50,8 +54,8 @@ function Header(props) {
         <Logo />
         {/* nav */}
         <nav className="space-y-3.5 ">
-          <Options />
-          <UserItems />
+          <Options onClose={closeToggleHandler} />
+          <UserItems onClose={closeToggleHandler} />
           <input
             type="search"
             placeholder="جستجو"
@@ -60,7 +64,11 @@ function Header(props) {
         </nav>
       </div>
       {/* content */}
-      <main className="w-ideal md:w-screen xs:h-ideal  md:h-screen h-xideal ">
+
+      <main
+        className="w-ideal md:w-screen xs:h-ideal  md:h-screen h-xideal "
+        onClick={toggle ? closeToggleHandler : null}
+      >
         {props.children}
       </main>
     </div>
