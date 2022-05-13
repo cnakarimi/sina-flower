@@ -80,7 +80,7 @@ function MobileDetail(props) {
       <div className="flex justify-end  md:hidden">
         <button
           className="btn w-24 xs:w-28"
-          onClick={() => addToCartHandler(props.selectedProduct)}
+          onClick={() => addToCartHandler(props)}
         >
           خرید
         </button>
