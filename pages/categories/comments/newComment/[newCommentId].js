@@ -11,6 +11,8 @@ function YourComment() {
 
   const productId = router.query.newCommentId;
 
+  console.log(productId);
+
   const nameInputRef = useRef();
   const commentInputRef = useRef();
 
@@ -57,7 +59,7 @@ function YourComment() {
           toast.success("نظر شما ذخیره شد", {
             position: "bottom-right",
           }),
-        router.back()
+        router.replace(`/categories/comments/${productId}`)
       )
       .catch((error) => {
         toast.error(error.message || "ارسال اطلاعات ناموفق", {

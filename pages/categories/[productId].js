@@ -18,6 +18,8 @@ function ProductDetailPage(props) {
       </Head>
       {/* for desktop */}
       <DesktopDetail
+        key={product.id}
+        id={product.id}
         image={product.image}
         name={product.name}
         price={product.price}
@@ -27,6 +29,8 @@ function ProductDetailPage(props) {
       />
       {/* for mobiles */}
       <MobileDetail
+        key={product.id}
+        id={product.id}
         image={product.image}
         name={product.name}
         price={product.price}
